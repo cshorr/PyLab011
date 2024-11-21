@@ -45,7 +45,7 @@ mindmap
 ---
 
 ## Setup and Organization
-1. **Create a new PyCharm Project** named `PyLab001` to organize your code.
+1. **Create a new PyCharm Project** named `PyLab011` to organize your code.
 2. **Inside this Project**, create two separate Python files:
    - `mindmap_leaf.py`
    - `mindmap_composite.py`
