@@ -53,29 +53,17 @@ mindmap
 ---
 
 ## Step 1: Creating the `MindMapLeaf` Class
-
-### Task: Define the `MindMapLeaf` Class
-1. **Open `mindmap_leaf.py`** and write the following class definition:
-   ```python
-   class MindMapLeaf:
-       # Step 1: Write the __init__ method
-       # - Define an __init__ method that takes two parameters: name and shape.
-       # - Assign these parameters to the instance variables self.name and self.shape.
-       ```
-
-   **Hint**: Use `self.name = name` and `self.shape = shape` to assign attributes.
+### 
+class MindMapLeaf:
+def__init__(self, name, shape):
+self.name = name
+self.shape = shape
 
 2. **Write the `__str__` Method**:
-   - **Purpose**: This method should return the name of the leaf formatted with its shape.
-   - **Instructions**:
-     - Define a method named `__str__` that calls another method `get_shape_representation()`.
-     - Use `format()` to insert `self.name` into the shape representation and return the formatted string.
-   ```python
-   # Step 2: Write the __str__ method
-   # - Define __str__ that formats the name using get_shape_representation().
-   ```
-
-   **Hint**: `return shape_representation.format(self.name)`
+   
+def __str__(self):
+    shape_template = self.get_shape_representation
+    return shape_representation.format(self.name)
 
 3. **Write the `display` Method**:
    - **Purpose**: This method should print the formatted name with a specified level of indentation.
