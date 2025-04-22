@@ -1,6 +1,5 @@
 
 
-
 class MindMapLeaf:
     # Step 1: Write the __init__ method
     def __init__(self, name, shape):
@@ -10,7 +9,8 @@ class MindMapLeaf:
 # Step 2: Write the __str__ method
     def __str__(self):
         shape_template = self.get_shape_representation()
-        return shape_template.format(self.name)
+    #    return shape_template.format(self.name)
+        return self.get_shape_representation().format(self.name)
 
 # Step 3: Write the display method
     def display(self, indent=0):
