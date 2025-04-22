@@ -1,13 +1,21 @@
 from mindmap_leaf import MindMapLeaf
-from mindmap_composite import Mindmap_composite
+from mindmap_composite import MindMapComposite
 
-root =
-branch =
-leaf1
-leaf2
-leaf = MindMapLeaf("Jean-Luc Picard", "circle")
-print(str(leaf))  # Should display "((Jean-Luc Picard))"
-leaf.display(2)   # Should display "  ((Jean-Luc Picard))" with two spaces
+# Step 1: Create root node
+root = MindMapComposite("Root", "circle")
 
-print("MindMapLeaf tests completed!")
+# Step 2: Create a branch
+branch = MindMapComposite("Characters", "oval")
 
+# Step 3: Add leaf nodes to the branch
+leaf1 = MindMapLeaf("Jean-Luc Picard", "plain")
+leaf2 = MindMapLeaf("Data", "plain")
+branch.add(leaf1)
+branch.add(leaf2)
+
+# Step 4: Attach the branch to the root
+root.add(branch)
+
+# Step 5: Display everything (mermaid-compatible)
+print("mindmap")
+root.display()

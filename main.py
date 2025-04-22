@@ -57,6 +57,6 @@ def main():
 
         root.display()
 
-
 if __name__ == "__main__":
+    print("mindmap")
     main()
